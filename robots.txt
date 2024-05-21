@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ziye2chen.github.io/sitemap.xml
+Sitemap: https://ziye2chen.github.io/al-folio/sitemap.xml
