@@ -29,7 +29,8 @@
       "url": "https://www.bu.edu/",
       "area": "Artificial Intelligence",
       "studyType": "M.S.",
-      "date": "2023-09-01",
+      "startDate": "2023-09-01",
+      "endDate": " ",
       "score": "10",
       "courses": ["Theory of Relativity"]
     },
