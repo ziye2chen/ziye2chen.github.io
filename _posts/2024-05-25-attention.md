@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a post with tabs
+title: HIW(How it work): The detail about Attention structure
 date: 2024-05-23 00:01:00
 description: this is the detail about attention structure
 tags: formatting code
