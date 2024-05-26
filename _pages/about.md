@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>M.S. Student in AI</p>
     <p>Boston University</p>
+    <p>Boston, MA, 02134</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
