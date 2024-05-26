@@ -29,7 +29,18 @@
       "url": "https://www.bu.edu/",
       "area": "Artificial Intelligence",
       "studyType": "M.S.",
-      "startDate": "2023-09-01",
+      "date": "2023-09-01",
+      "score": "10",
+      "courses": ["Theory of Relativity"]
+    },
+    {
+      "institution": "Nanjing Tech University",
+      "location": "Boston, Massachusetts, United States",
+      "url": "https://www.bu.edu/",
+      "area": "Artificial Intelligence",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2023-06-01",
       "score": "10",
       "courses": ["Theory of Relativity"]
     }
