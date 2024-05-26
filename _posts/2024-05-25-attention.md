@@ -1,9 +1,9 @@
 ---
 layout: post
 title: a post with tabs
-date: 2024-05-25 00:01:00
+date: 2024-05-23 00:01:00
 description: this is the detail about attention structure
-tags: Attention
+tags: formatting code
 categories: sample-posts
 tabs: true
 ---
