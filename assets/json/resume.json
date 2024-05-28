@@ -33,6 +33,16 @@
       "endDate": "2024-12-20",
       "score": "10",
       "courses": ["Theory of Relativity"]
+    },
+	{
+      "institution": "Nanjing Tech University",
+      "location": "Nanjing",
+      "area": "Mathematics",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2023-6-01",
+      "score": "10",
+      "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [
