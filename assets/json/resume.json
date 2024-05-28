@@ -1,7 +1,6 @@
 {
   "basics": {
     "name": "Ziye Chen",
-    "label": "Scientist",
     "image": "",
     "email": "ziyechen@bu.edu",
     "phone": "(857) 961-9101",
@@ -47,11 +46,17 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "The First Prize Scholarship of Nanjing Tech University",
+      "date": "2023",
+      "awarder": "Nanjing Tech University",
+    },
+    {
+      "title": "The First Prize of C/C++ Programming in Jiangsu Division of the 11th Lanqiao Cup",
+      "date": "2020",
+    },
+    {
+      "title": "The Excellent Award of C/C++ Programming in National Finals of the 11th Lanqiao Cup",
+      "date": "2020",
     }
   ],
   "certificates": [
