@@ -17,7 +17,7 @@ The attention architecture derives from the mechanisms of human attention. When 
 Scaled Dot-Product Attention is the most basic attention structure. Multi-Head Attention is multiple parallel Scaled Dot-Product Attention, which splices the output of each Scaled Dot-Product Attention and does a linear transformation to output.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/attention/scaledAndMultiAttention.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
