@@ -6,8 +6,9 @@ import math
 print(X.shape)
 </span></code></pre></div></div> <p>Next, we set up the basic parameters of Multihead attention.</p> <ul> <li>d_model represents the number of dimensions I want to map to the QKV space.</li> <li>n_head repersents the number of head.</li> </ul> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">d_model = 512
 n_head = 8
-</span></code></pre></div></div> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/attention/transform-480.webp 480w,/assets/img/attention/transform-800.webp 800w,/assets/img/attention/transform-1400.webp 1400w," sizes="95vw" type="image/webp"></source> <img src="/assets/img/attention/transform.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">class multi_head_attention(nn.Module): # When we are writing a pytorch class, we need to inherit nn.Module
-</span>    def __init__(self, d_model, n_head) -&gt; None:
+</span></code></pre></div></div> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">class multi_head_attention(nn.Module):
+</span># When we are writing a pytorch class, we need to inherit nn.Module
+    def __init__(self, d_model, n_head) -&gt; None:
         super(multi_head_attention, self).__init__() # Initialize some basic parameters
 <span class="err">
 </span>        self.d_model = d_model
@@ -22,8 +23,8 @@ n_head = 8
         # Because of 'multi-head', we need a combinatorial mapping of the outputs.
 <span class="err">
 </span>        self.softmax = nn.Softmax(dim=-1)
-<span class="err">
-</span>    def forward(self, q, k, v, mask = None):
+</code></pre></div></div> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/attention/transform-480.webp 480w,/assets/img/attention/transform-800.webp 800w,/assets/img/attention/transform-1400.webp 1400w," sizes="95vw" type="image/webp"></source> <img src="/assets/img/attention/transform.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Still in class multi_head_attention(nn.Module):
+    def forward(self, q, k, v, mask = None):
         batch, time, dimension = q.shape # get the dimensions of Q, K, V
         n_d = self.d_model // self.n_head # Because we have n heads, 'd_model' for each submodel has to be divisible by 'n_head'.
         q, k, v = self.w_q(q), self.w_k(k), self.w_v(v)
