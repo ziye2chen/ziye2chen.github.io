@@ -54,6 +54,12 @@ d_model = 512
 n_head = 8
 ```
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/attention/transform.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 ```diff
 class multi_head_attention(nn.Module): # When we are writing a pytorch class, we need to inherit nn.Module
     def __init__(self, d_model, n_head) -> None:
