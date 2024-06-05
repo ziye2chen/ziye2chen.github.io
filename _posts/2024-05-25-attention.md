@@ -7,6 +7,18 @@ tags: structure code
 categories: sample-posts
 tabs: true
 featured: true
+
+toc:
+  - name: Multi-Head Attention
+    subsections:
+        - name: Scaled Dot-Product Attention and Multi-Head Attention
+        - name: Detail about the code of Multi-Head Attention
+    
+    # if a section has subsections, you can add them as follows:
+    # subsections:
+    #   - name: Example Child Subsection 1
+    #   - name: Example Child Subsection 2
+  - name: Something you might want to know about Attention
 ---
 
 # Multi-Head Attention
@@ -126,6 +138,6 @@ output = attention(X, X, X)
 print(output, output.shape)
 ```
 
-## Something you might want to know about Attention
+# Something you might want to know about Attention
 
 
