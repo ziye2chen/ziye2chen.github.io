@@ -14,18 +14,31 @@ tabs: true
 
 The attention architecture derives from the mechanisms of human attention. When an image is placed in front of a human, the human scans the global image to obtain areas that are worth focusing on, and devotes more attention to these areas to obtain information. Nowadays, the popular attention model generally relies on the encoder-decoder framework, which can deal with tasks including NLP, image processing, etc.
 
-Scaled Dot-Product Attention is the most basic attention structure. Multi-Head Attention is multiple parallel Scaled Dot-Product Attention, which splices the output of each Scaled Dot-Product Attention and does a linear transformation to output.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/attention/scaledAndMultiAttention.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-Attention can be considered as a specific word weighting, given a sequence of inputs $$\{x_1, x_2, \dots, x_n\}$$, after the attentions layer, combining the input individuals \${x_1, x_2, \dots, x_n\}$$ and outputs $$\{y_1, y_2, \dots, y_n\}$$ will be as follows: 
+Scaled Dot-Product Attention is the most basic attention structure. Multi-Head Attention is multiple parallel Scaled Dot-Product Attention, which splices the output of each Scaled Dot-Product Attention and does a linear transformation to output.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/attention/transform.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Attention can be considered as a specific word weighting, given a sequence of inputs $$\{x_1, x_2, \dots, x_n\}$$, after the attentions layer, combining the input individuals $$\{x_1, x_2, \dots, x_n\}$$ and outputs $$\{y_1, y_2, \dots, y_n\}$$ will be as follows: 
 
 1. The input features are multiplied by three sets of weight matrices $$W^Q, W^K, W^V$$ to generate the three matrices of query, key, and value;
 2. The attention weight matrix $$A$$ is obtained from the product of a certain $$Q$$ and $$K$$, which is normalized to get $$\hat{A}$$;
 3. The normalized weights $$\hat{A}$$ are multiplied by V to get the final output feature $$O$$.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/attention/qkv.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ## Detail about the code of Multi-Head Attention
 
@@ -79,12 +92,6 @@ class multi_head_attention(nn.Module):
 
         self.softmax = nn.Softmax(dim=-1)
 ```
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/attention/transform.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
         
 ```diff
 #Still in class multi_head_attention(nn.Module):
