@@ -6,6 +6,7 @@ description: this is the detail about attention structure
 tags: structure code
 categories: sample-posts
 tabs: true
+featured: true
 ---
 
 # Multi-Head Attention
