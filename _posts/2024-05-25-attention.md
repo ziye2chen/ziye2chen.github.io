@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: The detail about Attention structure
 date: 2024-05-23 00:01:00
 description: this is the detail about attention structure
@@ -7,12 +7,6 @@ tags: structure code
 categories: sample-posts
 tabs: true
 featured: true
-
-authors:
-  - name: Albert Einstein
-    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
-    affiliations:
-      name: IAS, Princeton
 
 toc:
   - name: Multi-Head Attention
