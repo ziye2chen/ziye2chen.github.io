@@ -21,6 +21,12 @@ Scaled Dot-Product Attention is the most basic attention structure. Multi-Head A
     </div>
 </div>
 
+Attention can be considered as a specific word weighting, given a sequence of inputs $$\{x_1, x_2, \dots, x_n\}$$, after the attentions layer, combining the input individuals \${x_1, x_2, \dots, x_n\}$$ and outputs $$\{y_1, y_2, \dots, y_n\}$$ will be as follows: 
+
+1. The input features are multiplied by three sets of weight matrices $$W^Q, W^K, W^V$$ to generate the three matrices of query, key, and value;
+2. The attention weight matrix $$A$$ is obtained from the product of a certain $$Q$$ and $$K$$, which is normalized to get $$\hat{A}$$;
+3. The normalized weights $$\hat{A}$$ are multiplied by V to get the final output feature $$O$$.
+
 ## Detail about the code of Multi-Head Attention
 
 At the beginning, we need to import some libraries we will normally use.
