@@ -11,8 +11,8 @@ featured: true
 toc:
   - name: Multi-Head Attention
     subsections:
-        - name: Scaled Dot-Product Attention and Multi-Head Attention
-        - name: Detail about the code of Multi-Head Attention
+      - name: Scaled Dot-Product Attention and Multi-Head Attention
+      - name: Detail about the code of Multi-Head Attention
     
     # if a section has subsections, you can add them as follows:
     # subsections:
