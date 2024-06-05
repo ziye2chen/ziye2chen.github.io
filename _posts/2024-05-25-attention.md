@@ -3,7 +3,7 @@ layout: post
 title: The detail about Attention structure
 date: 2024-05-23 00:01:00
 description: this is the detail about attention structure
-tags: formatting code
+tags: structure code
 categories: sample-posts
 tabs: true
 ---
