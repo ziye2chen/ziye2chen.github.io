@@ -8,6 +8,12 @@ categories: sample-posts
 tabs: true
 featured: true
 
+authors:
+  - name: Albert Einstein
+    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IAS, Princeton
+
 toc:
   - name: Multi-Head Attention
     subsections:
