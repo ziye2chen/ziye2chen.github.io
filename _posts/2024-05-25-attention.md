@@ -9,10 +9,10 @@ tabs: true
 featured: true
 
 toc:
-  - name: Multi-Head Attention
+  - name: Attention Structure
     subsections:
-      - name: Scaled Dot-Product Attention and Multi-Head Attention
-      - name: Detail about the code of Multi-Head Attention
+      - name: Scaled Dot-Product Attention
+      - name: Multi-Head Attention
     
     # if a section has subsections, you can add them as follows:
     # subsections:
@@ -38,9 +38,9 @@ _styles: >
 
 ---
 
-## Multi-Head Attention
+## Attention Structure
 
-### Scaled Dot-Product Attention and Multi-Head Attention
+### Scaled Dot-Product Attention
 
 The attention architecture derives from the mechanisms of human attention. When an image is placed in front of a human, the human scans the global image to obtain areas that are worth focusing on, and devotes more attention to these areas to obtain information. Nowadays, the popular attention model generally relies on the encoder-decoder framework, which can deal with tasks including NLP, image processing, etc.
 
@@ -70,7 +70,11 @@ Attention can be considered as a specific word weighting, given a sequence of in
     </div>
 </div>
 
-### Detail about the code of Multi-Head Attention
+Mathematically, the self-attention matrix for input matrices $$(Q, K, V)$$ is calculated as:
+
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V$$
+
+### Multi-Head Attention
 
 At the beginning, we need to import some libraries we will normally use.
 
