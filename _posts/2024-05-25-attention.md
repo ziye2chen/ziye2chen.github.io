@@ -74,6 +74,12 @@ Mathematically, the self-attention matrix for input matrices $$(Q, K, V)$$ is ca
 
 $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V$$
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/attention/Y.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 ### Multi-Head Attention
 
 At the beginning, we need to import some libraries we will normally use.
