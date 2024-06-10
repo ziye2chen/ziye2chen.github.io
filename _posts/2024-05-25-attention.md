@@ -82,6 +82,8 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 
 ### Multi-Head Attention
 
+If each vector $$q_i, k_i, v_i$$ is split into n, we can get the n-headed attention mechanism. It is recognized that multi-head self-attention mechanisms are better than single-head ones because it can capture information in more dimensions.
+
 At the beginning, we need to import some libraries we will normally use.
 
 ```diff
