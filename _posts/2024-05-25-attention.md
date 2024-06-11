@@ -20,7 +20,7 @@ toc:
     #   - name: Example Child Subsection 2
   - name: Something you might want to know about Attention
     subsections:
-      - name: The square root of d
+      - name: Why should we divide $$\sqrt{d}$$ in the Attention calculation?
 
 _styles: >
   .fake-img {
