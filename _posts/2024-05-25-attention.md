@@ -19,6 +19,8 @@ toc:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
   - name: Something you might want to know about Attention
+    subsections:
+      - name: Why should we divide $$\sqrt{d}$$ in the Attention calculation?
 
 _styles: >
   .fake-img {
@@ -175,4 +177,8 @@ print(output, output.shape)
 
 ## Something you might want to know about Attention
 
+### Why should we divide $$\sqrt{d}$$ in the Attention calculation?
 
+Assume that the Query vector $$q$$ and the Key vector $$k$$ have dimension $$d$$ and their elements are independent and identically distributed random variables with mean $$0$$ and variance $$1$$.
+
+Then their dot product $$q \cdot k$$ can be expressed as: $$q \cdot k = \sum_{i=1}^d q_i k_i$$. Since each $$q_i$$ and $$k_i$$ is an independently and identically distributed random variable, their product $$q_i k_i$$ is also a random variable. For each $$q_i k_i$$, the expectation is $$0$$ and the variance is $$1$$.
