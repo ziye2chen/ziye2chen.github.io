@@ -20,7 +20,7 @@ toc:
     #   - name: Example Child Subsection 2
   - name: Something you might want to know about Attention
     subsections:
-      - name: Why should we divide $$\sqrt{d}$$ in the Attention calculation?
+      - name: The square root of d in the Attention calculation
 
 _styles: >
   .fake-img {
@@ -177,7 +177,9 @@ print(output, output.shape)
 
 ## Something you might want to know about Attention
 
-### Why should we divide $$\sqrt{d}$$ in the Attention calculation?
+### The square root of d in the Attention calculation
+
+**Why should we divide $$\sqrt{d}$$ in the Attention calculation?**
 
 Assume that the Query vector $$q$$ and the Key vector $$k$$ have dimension $$d$$ and their elements are independent and identically distributed random variables with mean $$0$$ and variance $$1$$.
 
