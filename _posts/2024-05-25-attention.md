@@ -185,7 +185,7 @@ Then their dot product $$q \cdot k$$ can be expressed as: $$q \cdot k = \sum_{i=
 
 Therefore, the expected value of the dot product $$q \cdot k$$ is:
 
- $$\\mathbb{E}[q \cdot k] = \mathbb{E} \left[ \sum_{i=1}^d q_i k_i \right] = \sum_{i=1}^d \mathbb{E}[q_i k_i] = 0$$ 
+ $$\mathbb{E}[q \cdot k] = \mathbb{E} \left[ \sum_{i=1}^d q_i k_i \right] = \sum_{i=1}^d \mathbb{E}[q_i k_i] = 0$$ 
 
 Moreover, its variance is:
 
