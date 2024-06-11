@@ -182,3 +182,25 @@ print(output, output.shape)
 Assume that the Query vector $$q$$ and the Key vector $$k$$ have dimension $$d$$ and their elements are independent and identically distributed random variables with mean $$0$$ and variance $$1$$.
 
 Then their dot product $$q \cdot k$$ can be expressed as: $$q \cdot k = \sum_{i=1}^d q_i k_i$$. Since each $$q_i$$ and $$k_i$$ is an independently and identically distributed random variable, their product $$q_i k_i$$ is also a random variable. For each $$q_i k_i$$, the expectation is $$0$$ and the variance is $$1$$.
+
+Therefore, the expected value of the dot product $$q \cdot k$$ is:
+
+ $$\\mathbb{E}[q \cdot k] = \mathbb{E} \left[ \sum_{i=1}^d q_i k_i \right] = \sum_{i=1}^d \mathbb{E}[q_i k_i] = 0$$ 
+
+Moreover, its variance is:
+
+ $$\text{Var}(q \cdot k) = \text{Var} \left( \sum_{i=1}^d q_i k_i \right) = \sum_{i=1}^d \text{Var}(q_i k_i) = d$$
+
+Thus, the standard deviation of the dot product $$q \cdot k$$ is:
+
+$$\sigma = \sqrt{\text{Var}(q \cdot k)} = \sqrt{d}$$
+
+By the Central Limit Theorem, the sum of these independently and identically distributed random variables will converge to a normal distribution when $d$ is large enough. To normalize this, we subtract the expected value and divide by the standard deviation:
+
+ $$\frac{q \cdot k - \mathbb{E}[q \cdot k]}{\sqrt{\text{Var}(q \cdot k)}}$$ 
+
+Here, $$\mathbb{E}[q \cdot k] = 0$$ and $$\text{Var}(q \cdot k) = d$$, so the expression becomes:
+
+ $$\frac{q \cdot k}{\sqrt{d}}$$
+
+This will make the expression approximately obey the standard normal distribution $$N(0, 1)$$.
