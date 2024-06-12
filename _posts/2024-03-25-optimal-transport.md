@@ -71,7 +71,7 @@ The concept of measures will be used later, and before I introduce probability m
 And we use discrete measure describes a probability measure if, additionally, $$a \in \Sigma_n $$ and more generally a positive measure if all the elements of vector $$a$$ are non-negative. 
 
 ````markdown
-A discrete measure with weights $$a$4 and locations $$x_1, \cdots, x_n \in \mathcal{X}$$ reads
+A discrete measure with weights $$a$$ and locations $$x_1, \cdots, x_n \in \mathcal{X}$$ reads
 \begin{equation}
    \label{inter}
    \alpha = \sum_{i=1}^n a_i \delta_{x_i},
