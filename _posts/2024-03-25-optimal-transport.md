@@ -64,9 +64,9 @@ In mathematics, measure is a generalization and formalization of geometrical mea
 
 The concept of measures will be used later, and before I introduce probability measures, I need to introduce the histogram. The histogram here is the probability of n sums of 1, representing a probability distribution. We will use interchangeably the terms histogram and probability vector for any element $a \in \Sigma_n $ that belongs to the probability simplex
 
-\begin{equation}
-\Sigma_n := \{a \in \mathbb{R}_{+}^n : \sum_{i=1}^n a_i = 1  \}
-\end{equation}
+
+$$\Sigma_n := \{a \in \mathbb{R}_{+}^n : \sum_{i=1}^n a_i = 1  \}$$
+
 
 And we use discrete measure describes a probability measure if, additionally, $$a \in \Sigma_n $$ and more generally a positive measure if all the elements of vector $$a$$ are non-negative. 
 
