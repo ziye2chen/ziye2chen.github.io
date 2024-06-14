@@ -21,12 +21,6 @@ toc:
       - name: Reminder of Dual Problem
       - name: Kantorovich Duality
 
-  - name: Modern Solution of Optimal Transport (Sinkhorn)
-    subsections:
-      - name: Sinkhorn Distance
-      - name: Computing Regularized Transport with Sinkhorn's Algorithm
-      - name: PyTorch implementation of sinkhorn
-
 
 _styles: >
   .fake-img {
@@ -243,3 +237,14 @@ where the inequality is understood to hold for $$\mu$$-almost every $$x \in X$$ 
 </div>
 
 And if we look at the discrete optimal transport problem,
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/dual3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+its dual problem is
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/2_3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
