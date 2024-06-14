@@ -209,8 +209,11 @@ All optimization problems, in theory, can be transformed into standard form:
 </div>
 
 And then we define Lagrangian function:
+
 $$ L(x, \lambda, \mu) = f_0(x) + \sum_{i=1}^{m} \lambda_i f_i(x) + \sum_{j=1}^{p} \mu_j h_j(x) $$
+
 With the Lagrangian function, we introduce the Lagrange dual function:
+
 $$ g(\lambda, \mu) = \inf_{x \in \mathcal{D}} L(x, \lambda, \mu) $$
 
 The Lagrange dual function is the Lagrangian function that minimizes with respect to x. And we get the (Lagrangian) dual problem from the standard problem:
@@ -228,7 +231,9 @@ The Lagrange dual function is the Lagrangian function that minimizes with respec
 </div>
 
 Let $$\Phi_c$$ defined by 
+
 $$\Phi_c = \{(\varphi, \psi) \in L^1(\mu) \times L^1(\nu) : \varphi(x) + \psi(y) \leq c(x, y)\}$$
+
 where the inequality is understood to hold for $$\mu$$-almost every $$x \in X$$ and $$\nu$$-almost every $$y \in Y$$. Then,
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
