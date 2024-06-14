@@ -199,3 +199,21 @@ If $$X$$ is bounded then $$\mathcal{P}_p(X)=\mathcal{P}(X)$$. The Wasserstein di
     </div>
 </div>
 And the wasserstein distance also satisfies the positive definiteness and triangular inequalities of the fugitive space.
+
+## Duality
+
+We saw in the previous chapter how Kantorovich’s optimal transport problem resembles a linear programme. It should not therefore be surprising that Kantorovich’s optimal transport problem admits a dual formulation.
+
+In optimization theory, turn original optimizing problem into dual problem can easily make it more easier to solve. Regardless of the difficulty of the original problem, dual problems are convex, and convex problems are a class of problems that are relatively easy to solve. When the original problem is a particularly difficult one, it is relatively easy to solve by reducing it to a dyadic problem
+
+### Reminder of Dual Problem
+All optimization problems, in theory, can be transformed into standard form:
+\begin{equation}
+\begin{aligned}
+& \underset{x}{\text{min}}
+& & f_0(x) \\
+& \text{s.t.}
+& & f_i(x) \leq 0, \; i = 1, \ldots, m, \\
+&&& h_j(x) = 0, \; j = 1, \ldots, p.
+\end{aligned}
+\end{equation}
