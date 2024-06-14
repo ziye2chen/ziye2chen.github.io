@@ -208,12 +208,38 @@ In optimization theory, turn original optimizing problem into dual problem can e
 
 ### Reminder of Dual Problem
 All optimization problems, in theory, can be transformed into standard form:
-\begin{equation}
-\begin{aligned}
-& \underset{x}{\text{min}}
-& & f_0(x) \\
-& \text{s.t.}
-& & f_i(x) \leq 0, \; i = 1, \ldots, m, \\
-&&& h_j(x) = 0, \; j = 1, \ldots, p.
-\end{aligned}
-\end{equation}
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/dual1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+And then we define Lagrangian function:
+$$ L(x, \lambda, \mu) = f_0(x) + \sum_{i=1}^{m} \lambda_i f_i(x) + \sum_{j=1}^{p} \mu_j h_j(x) $$
+With the Lagrangian function, we introduce the Lagrange dual function:
+$$ g(\lambda, \mu) = \inf_{x \in \mathcal{D}} L(x, \lambda, \mu) $$
+
+The Lagrange dual function is the Lagrangian function that minimizes with respect to x. And we get the (Lagrangian) dual problem from the standard problem:
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/dual2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+### Kantorovich Duality
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/2_1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Let $$\Phi_c$$ defined by 
+$$\Phi_c = \{(\varphi, \psi) \in L^1(\mu) \times L^1(\nu) : \varphi(x) + \psi(y) \leq c(x, y)\}$$
+where the inequality is understood to hold for $$\mu$$-almost every $$x \in X$$ and $$\nu$$-almost every $$y \in Y$$. Then,
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/optimalTransport/equation/2_2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+And if we look at the discrete optimal transport problem,
