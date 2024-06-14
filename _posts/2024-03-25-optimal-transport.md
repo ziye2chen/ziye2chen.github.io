@@ -4,7 +4,7 @@ title: Optimal Transport
 date: 2024-03-23 00:01:00
 description: this is an introduction about Optimal Transport
 tags: math
-categories: sample-posts
+categories: optimal-transport
 tabs: true
 featured: true
 
