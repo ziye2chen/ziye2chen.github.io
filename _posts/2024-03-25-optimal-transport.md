@@ -6,7 +6,7 @@ description: this is an introduction about Optimal Transport
 tags: math optimalTransport
 categories: optimal-transport
 tabs: true
-featured: true
+
 
 toc:
   - name: Intro to Optimal Transport
