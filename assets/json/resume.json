@@ -1,17 +1,18 @@
 {
   "basics": {
-    "name": "Ziye Chen",
+    "name": "Albert Einstein",
+    "label": "Scientist",
     "image": "",
-    "email": "ziyechen@bu.edu",
-    "phone": "(857) 961-9101",
-    "url": "https://ziye2chen.github.io",
-    "summary": "A Master's student in Artificial Intelligence from Boston University",
+    "email": "albert@einstein.de",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "address": "665 Commonwealth Ave",
-      "postalCode": "02215",
-      "city": "Boston",
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
       "countryCode": "US",
-      "region": "Massachusetts"
+      "region": "California"
     },
     "profiles": [
       {
@@ -21,50 +22,51 @@
       }
     ]
   },
+  "work": [
+    {
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
+      "url": "https://example.com",
+      "startDate": "1933-01-01",
+      "endDate": "1955-01-01",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": ["Relativity"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "People's Climate March",
+      "location": "Zurich, Switzerland",
+      "position": "Lead Organizer",
+      "url": "https://example.com",
+      "startDate": "2014-04-01",
+      "endDate": "2015-07-01",
+      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+    }
+  ],
   "education": [
     {
-      "institution": "Boston University",
-      "location": "Boston",
-      "url": "https://www.bu.edu/",
-      "area": "Artificial Intelligence",
-      "studyType": "M.S.",
-      "startDate": "2023-09-01",
-      "endDate": "2024-12-20",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    },
-	{
-      "institution": "Nanjing Tech University",
-      "location": "Nanjing",
-      "area": "Mathematics",
-      "studyType": "B.S.",
-      "startDate": "2019-09-01",
-      "endDate": "2023-6-01",
+      "institution": "University of Zurich, Zurich, Switzerland",
+      "location": "Zurich, Switzerland",
+      "url": "https://www.uzh.ch/",
+      "area": "Software Development",
+      "studyType": "PhD",
+      "startDate": "1905-01-01",
+      "endDate": "1905-01-01",
       "score": "10",
       "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [
     {
-      "title": "The First Prize Scholarship of Nanjing Tech University",
-      "date": "2023-03-01",
-      "awarder": "Nanjing Tech University",
-      "summary": ""
-    },
-    {
-      "title": "The First Prize of C/C++ Programming in Jiangsu Division of the 11th Lanqiao Cup",
-      "date": "2020-10-17",
-      "awarder": "Ministry of Industry and Information Technology of the People's Republic of China",
-      "summary": ""
-    },
-    {
-      "title": "The Excellent Award of C/C++ Programming in National Finals of the 11th Lanqiao Cup",
-      "date": "2020-11-14",
-      "awarder": "Ministry of Industry and Information Technology of the People's Republic of China",
-      "summary": ""
+      "title": "Nobel Prize in Physics",
+      "date": "1921-11-01",
+      "awarder": "Royal Swedish Academy of Sciences",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-/*
   "certificates": [
     {
       "name": "Machine Learning",
@@ -132,7 +134,6 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-*/
   "skills": [
     {
       "name": "Physics",
@@ -174,7 +175,6 @@
       ]
     }
   ],
-/*
   "references": [
     {
       "name": "Professor John Doe",
@@ -187,7 +187,6 @@
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
-*/
   "projects": [
     {
       "name": "Quantum Computing",
