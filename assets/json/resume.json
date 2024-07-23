@@ -59,22 +59,20 @@
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "AI",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "LLM Structure",
+        "Prompt Engineering",
+        "Computer Vision",
+        "Deep Learning"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -86,26 +84,25 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Badminton",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "projects": [
+      "keywords": ""
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Soccer",
+      "icon": "fa-solid fa-tag",
+      "keywords": ""
+    },
+    {
+      "name": "Basketball",
+      "icon": "fa-solid fa-tag",
+      "keywords": ""
+    },
+    {
+      "name": "Cooking",
+      "icon": "fa-solid fa-tag",
+      "keywords": ""
     }
+    
   ]
 }
