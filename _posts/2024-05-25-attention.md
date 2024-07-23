@@ -7,6 +7,7 @@ tags: structure code
 categories: sample-posts
 tabs: true
 featured: true
+disqus_comments: true
 
 toc:
   - name: Attention Structure
