@@ -95,7 +95,7 @@ If each vector $$q_i, k_i, v_i$$ is split into n, we can get the n-headed attent
 
 At the beginning, we need to import some libraries we will normally use.
 
-```diff
+```python
 import torch
 from torch import nn
 import torch.functional as F
@@ -110,7 +110,7 @@ We need some data for testing. The dimension of testing data is 3.
 
 And in language model, the '512' below normally means the dimensions of the word vector do you want to map your word to after Embedding.
 
-```diff
+```python
 X = torch.randn(128,64,512) #Batch, Time, Dimension
 print(X.shape)
 ```
@@ -119,12 +119,12 @@ Next, we set up the basic parameters of Multihead attention.
 - d_model represents the number of dimensions I want to map to the QKV space.
 - n_head repersents the number of head.
 
-```diff
+```python
 d_model = 512
 n_head = 8
 ```
 
-```diff
+```python
 class multi_head_attention(nn.Module):
 # When we are writing a pytorch class, we need to inherit nn.Module
     def __init__(self, d_model, n_head) -> None:
@@ -144,7 +144,7 @@ class multi_head_attention(nn.Module):
         self.softmax = nn.Softmax(dim=-1)
 ```
         
-```diff
+```python
 #Still in class multi_head_attention(nn.Module):
     def forward(self, q, k, v, mask = None):
         batch, time, dimension = q.shape # get the dimensions of Q, K, V
@@ -170,7 +170,7 @@ class multi_head_attention(nn.Module):
         return output 
 ```
 
-```diff
+```python
 attention = multi_head_attention(d_model, n_head)
 output = attention(X, X, X)
 print(output, output.shape)
