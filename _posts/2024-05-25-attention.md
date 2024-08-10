@@ -7,7 +7,6 @@ tags: structure code
 categories: AI
 tabs: true
 featured: true
-disqus_comments: true
 
 toc:
   - name: Attention Structure
