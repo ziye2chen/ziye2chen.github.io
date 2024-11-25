@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I’m a M.S. student in Artificial Intelligence at Boston University. My research interests include the theory and application of LLMs, and the integration of mathematical theory and machine learning.
+I am a M.S. student in Artificial Intelligence at Boston University. My research interests focus on the theory and practical applications of large language models (LLMs) and efficient AI architectures. My interests lie in optimizing Transformer structures, developing frameworks for mathematical reasoning in LLMs, and enhancing the capabilities of AI through efficient model design. I am particularly passionate about integrating mathematical theories with machine learning to push the boundaries of what AI systems can achieve.
 
-Outside of work, I enjoy soccer, badminton, basketball, photograph and cooking.
+Outside of my academic pursuits, I enjoy staying active by playing badminton, soccer, and basketball. I also love photography and cooking.
 
