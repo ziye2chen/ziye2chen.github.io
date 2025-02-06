@@ -36,28 +36,6 @@
     }
   ],
 
-  "researchs": [
-    {
-      "name": "Large Language Models for Mathematical Analysis",
-      "startDate": "2024-09-01",
-      "endDate": "2024-12-31",
-      "highlights": [
-        "Developed the DEMI–MathAnalysis dataset, a specialized collection of proof-based problems in mathematical analysis, to fine-tune large language models (LLMs)",
-        "Designed and implemented a guiding framework integrating problem classification, dynamic prompt construction, and a domain-specific Knowledge Base",
-        "Established a robust evaluation standard using GPT-4o, and compared performance across fine-tuned models such as Llama 3.2, Qwen 2.5, and OpenAI’s state-of-the-art models"
-      ]
-    },
-    {
-      "name": "P300 EEG Signal Shape-Type Function Research",
-      "startDate": "2023-02-15",
-      "endDate": "2023-06-15",
-      "highlights": [
-        "Developed a P300 signal energy detector based on the Neyman-Pearson theorem and GLRT, successfully filtering out white noise and improving signal detection accuracy",
-        "Employed the AMPD algorithm for effective peak detection, identifying significant peaks in EEG data and isolating potential P300 signals",
-        "Implemented clustering analysis with an enhanced correlation distance method, accurately deriving the shape-type function of the P300 signal"
-      ]
-    }
-  ],
 
   "projects": [
     {
