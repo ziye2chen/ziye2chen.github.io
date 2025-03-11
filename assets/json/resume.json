@@ -35,7 +35,15 @@
       "score": "3.5/4.0"
     }
   ],
-
+  "publications": [
+    {
+      "name": "Large Language Models for Mathematical Analysis",
+      "publisher": "arXiv",
+      "releaseDate": "2024-12-28", 
+      "url": "https://arxiv.org/abs/2501.00059",
+      "summary": "In this research, we developed the DEMI-MathAnalysis dataset, comprising proof-based problems from mathematical analysis topics such as Sequences and Limits, Infinite Series, and Convex Functions. We also designed a guiding framework to rigorously enhance LLMs' ability to solve these problems."
+    }
+  ],
 
   "projects": [
     {
